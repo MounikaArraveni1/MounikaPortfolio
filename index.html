@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Mounika Arraveni | Full Stack Architect | Java • .NET • Cloud</title>
+    <meta name="description" content="Mounika Arraveni - Full Stack Architect specializing in Java, .NET, Cloud, and Microservices. Professional portfolio showcasing enterprise projects and technical expertise.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Mounika Arraveni | Full Stack Architect | Java • .NET • Cloud • Microservices</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: Plus Jakarta Sans + Inter for modern professional look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Professional blend of Inter and Manrope for superior readability -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
@@ -18,47 +20,48 @@
         }
 
         body {
-            font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #f5f7fc 0%, #eef2f8 100%);
-            color: #1a2c3e;
-            line-height: 1.5;
+            font-family: 'Inter', 'Manrope', system-ui, -apple-system, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            line-height: 1.55;
             scroll-behavior: smooth;
             overflow-x: hidden;
         }
 
-        /* Professional Color Scheme: Deep Indigo + Soft Coral + Slate */
+        /* New Professional Theme: Navy & Slate with Elegant Teal Accent */
         :root {
-            --primary-deep: #1a2c3e;
-            --primary-indigo: #2c3e66;
-            --accent-coral: #e06c5e;
-            --accent-soft: #f0a07c;
-            --slate-light: #f4f7fc;
-            --slate-card: #ffffff;
-            --text-dark: #1e2f3d;
-            --text-muted: #4a627a;
-            --border-light: rgba(44, 62, 102, 0.12);
+            --navy-deep: #0f172a;
+            --slate-dark: #1e293b;
+            --slate-mid: #334155;
+            --teal-accent: #14b8a6;
+            --teal-soft: #5eead4;
+            --gray-cool: #f1f5f9;
+            --card-white: #ffffff;
+            --border-light: #e2e8f0;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --gradient-header: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --glow-teal: 0 10px 25px -5px rgba(20, 184, 166, 0.15);
         }
 
-        /* Clean Background - No Bubbles */
-        .bg-clean {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(145deg, #f5f7fc 0%, #eef2f8 100%);
+        body {
+            background: linear-gradient(145deg, #f8fafc 0%, #f1f5f9 100%);
         }
 
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #d9e1ec;
+            background: #e2e8f0;
+            border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb {
-            background: var(--accent-coral);
+            background: var(--teal-accent);
             border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0d9488;
         }
 
         .container {
@@ -67,16 +70,17 @@
             padding: 0 2rem;
         }
 
-        /* Glassmorphism Header */
+        /* Modern Glass Header with deeper elegance */
         .main-header {
-            background: rgba(26, 44, 62, 0.95);
-            backdrop-filter: blur(20px);
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(16px);
             color: white;
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(224, 108, 94, 0.3);
+            border-bottom: 1px solid rgba(20, 184, 166, 0.4);
             transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
         .header-flex {
@@ -88,16 +92,16 @@
         }
 
         .logo h1 {
-            font-family: 'Plus Jakarta Sans', monospace;
-            font-size: 1.9rem;
+            font-family: 'Manrope', monospace;
+            font-size: 2rem;
             font-weight: 800;
             letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #ffffff, #f0c4b8, #ffb49a);
+            background: linear-gradient(135deg, #ffffff, #cbd5e1, var(--teal-soft));
             background-size: 200% auto;
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            animation: shimmer 5s ease infinite;
+            animation: shimmer 6s ease infinite;
         }
         @keyframes shimmer {
             0% { background-position: 0% 50%; }
@@ -107,19 +111,20 @@
 
         .logo p {
             font-size: 0.8rem;
-            color: #b9cadf;
+            color: #94a3b8;
             margin-top: 4px;
             letter-spacing: 0.3px;
+            font-weight: 500;
         }
 
         .nav-links ul {
             display: flex;
-            gap: 2rem;
+            gap: 2.2rem;
             list-style: none;
         }
 
         .nav-links a {
-            color: #eef2f9;
+            color: #e2e8f0;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
@@ -133,90 +138,93 @@
             bottom: 0;
             left: 0;
             width: 0;
-            height: 2px;
-            background: var(--accent-coral);
-            transition: width 0.3s ease;
+            height: 2.5px;
+            background: var(--teal-accent);
+            transition: width 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            border-radius: 4px;
         }
         .nav-links a:hover:after {
             width: 100%;
         }
         .nav-links a:hover {
-            color: var(--accent-coral);
+            color: var(--teal-soft);
         }
 
         section {
-            padding: 5rem 0;
+            padding: 5.5rem 0;
             border-bottom: 1px solid var(--border-light);
         }
 
         .section-title {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2.3rem;
+            font-family: 'Manrope', sans-serif;
+            font-size: 2.4rem;
             font-weight: 700;
-            margin-bottom: 2rem;
+            margin-bottom: 2.2rem;
             position: relative;
             display: inline-block;
-            color: var(--primary-deep);
-            letter-spacing: -0.3px;
+            color: var(--navy-deep);
+            letter-spacing: -0.02em;
         }
         .section-title:after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -12px;
             left: 0;
-            width: 70px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-coral), var(--accent-soft));
-            border-radius: 4px;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--teal-accent), var(--teal-soft));
+            border-radius: 8px;
         }
 
-        /* About card */
+        /* About Card - polished */
         .about-text {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(2px);
-            padding: 2rem;
-            border-radius: 28px;
-            box-shadow: 0 20px 35px -12px rgba(26,44,62,0.08);
+            background: var(--card-white);
+            padding: 2.5rem;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.02);
             border: 1px solid var(--border-light);
             transition: all 0.35s ease;
         }
         .about-text:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 25px 40px -14px rgba(224,108,94,0.2);
-            border-color: var(--accent-coral);
+            transform: translateY(-5px);
+            box-shadow: var(--glow-teal), 0 15px 30px -12px rgba(0,0,0,0.1);
+            border-color: var(--teal-accent);
         }
 
         .highlight {
-            background: linear-gradient(120deg, #fce9e5, #fadbd4);
-            color: #c25b4e;
-            font-weight: 600;
-            padding: 0.2rem 0.7rem;
-            border-radius: 16px;
+            background: linear-gradient(120deg, #e6fffa, #ccfbf1);
+            color: #0f766e;
+            font-weight: 700;
+            padding: 0.2rem 0.75rem;
+            border-radius: 20px;
             display: inline-block;
+            font-size: 0.9rem;
         }
 
         .tech-stack-list {
-            margin-top: 1.5rem;
+            margin-top: 1.8rem;
             display: flex;
             flex-wrap: wrap;
             gap: 0.8rem;
         }
         .tech-pill {
-            background: #f1f4f9;
-            padding: 0.45rem 1.1rem;
+            background: var(--gray-cool);
+            padding: 0.5rem 1.2rem;
             border-radius: 40px;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 0.8rem;
-            border-left: 3px solid var(--accent-coral);
+            border-left: 3px solid var(--teal-accent);
             transition: all 0.2s;
+            color: var(--slate-dark);
         }
         .tech-pill:hover {
-            background: var(--accent-coral);
+            background: var(--teal-accent);
             color: white;
-            transform: translateX(5px);
+            transform: translateX(6px);
+            border-left-color: white;
         }
 
-        /* Skills chips */
+        /* Skills chips - modern & interactive */
         .skills-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -224,187 +232,219 @@
             margin-top: 1rem;
         }
         .skill-chip {
-            background: white;
-            padding: 0.65rem 1.4rem;
+            background: var(--card-white);
+            padding: 0.7rem 1.5rem;
             border-radius: 60px;
             font-weight: 600;
             font-size: 0.85rem;
-            color: var(--primary-deep);
+            color: var(--text-primary);
             transition: all 0.25s ease;
-            border: 1px solid #dee4ed;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            border: 1px solid var(--border-light);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
         }
         .skill-chip i {
             margin-right: 8px;
-            color: var(--accent-coral);
+            color: var(--teal-accent);
+            transition: transform 0.2s;
         }
         .skill-chip:hover {
             transform: translateY(-4px);
-            background: var(--primary-indigo);
+            background: var(--navy-deep);
             color: white;
-            border-color: var(--accent-coral);
-            box-shadow: 0 12px 22px -10px rgba(224,108,94,0.35);
+            border-color: var(--teal-accent);
+            box-shadow: 0 12px 22px -10px rgba(20,184,166,0.35);
         }
         .skill-chip:hover i {
-            color: var(--accent-soft);
+            color: var(--teal-soft);
+            transform: scale(1.05);
         }
 
-        /* Projects Grid */
+        /* Projects Grid - Elevated */
         .projects-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
         .project-card {
-            background: white;
-            border-radius: 30px;
+            background: var(--card-white);
+            border-radius: 32px;
             overflow: hidden;
-            box-shadow: 0 10px 25px -8px rgba(0,0,0,0.04);
+            box-shadow: 0 6px 14px -6px rgba(0,0,0,0.03);
             transition: all 0.4s cubic-bezier(0.2, 0.85, 0.4, 1);
             border: 1px solid var(--border-light);
             flex: 1 1 340px;
+            backdrop-filter: blur(0px);
         }
         .project-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 30px 40px -18px rgba(44,62,102,0.25);
-            border-color: var(--accent-coral);
+            box-shadow: 0 25px 40px -18px rgba(15,23,42,0.2), 0 0 0 1px rgba(20,184,166,0.2);
+            border-color: var(--teal-accent);
         }
         .card-content {
-            padding: 1.7rem;
+            padding: 1.8rem;
         }
         .project-icon {
-            font-size: 2.1rem;
-            color: var(--accent-coral);
-            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            color: var(--teal-accent);
+            margin-bottom: 1.2rem;
             transition: transform 0.3s;
         }
         .project-card:hover .project-icon {
-            transform: scale(1.05);
-            color: var(--primary-indigo);
+            transform: scale(1.08);
+            color: var(--navy-deep);
         }
         .project-card h3 {
-            font-size: 1.4rem;
+            font-size: 1.45rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: var(--primary-deep);
+            margin-bottom: 0.6rem;
+            color: var(--navy-deep);
         }
         .project-tech {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 0.9rem 0;
+            gap: 0.6rem;
+            margin: 1rem 0;
         }
         .tech-badge {
-            background: #eff3f8;
-            padding: 0.25rem 0.9rem;
-            border-radius: 20px;
+            background: var(--gray-cool);
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
             font-size: 0.7rem;
             font-weight: 600;
-            color: var(--primary-indigo);
+            color: var(--slate-mid);
+            transition: all 0.2s;
+        }
+        .project-card:hover .tech-badge {
+            background: #e2e8f0;
         }
         .project-desc {
-            color: var(--text-muted);
-            margin-bottom: 1.2rem;
-            font-size: 0.9rem;
-            line-height: 1.45;
+            color: var(--text-secondary);
+            margin-bottom: 1.3rem;
+            font-size: 0.92rem;
+            line-height: 1.5;
         }
-        .project-link {
+        .project-links {
+            margin-top: 1rem;
+        }
+        .project-links a {
             display: inline-flex;
             align-items: center;
             gap: 8px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.85rem;
-            color: var(--accent-coral);
-            transition: gap 0.2s;
+            color: var(--teal-accent);
+            transition: all 0.25s;
+            border-radius: 30px;
+            padding: 0.3rem 0;
         }
-        .project-link:hover {
+        .project-links a:hover {
             gap: 12px;
-            color: var(--primary-indigo);
+            color: var(--navy-deep);
+            text-decoration: underline;
         }
 
-        /* Contact Card */
+        /* Contact Card Enhancement */
         .contact-card {
-            background: white;
-            border-radius: 36px;
-            padding: 2.5rem;
+            background: var(--card-white);
+            border-radius: 44px;
+            padding: 2.8rem;
             text-align: center;
-            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.05);
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.04);
             border: 1px solid var(--border-light);
             transition: all 0.35s;
         }
         .contact-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 28px 45px -16px rgba(224,108,94,0.2);
-            border-color: var(--accent-coral);
+            box-shadow: var(--glow-teal);
+            border-color: var(--teal-accent);
         }
         .contact-links {
             display: flex;
             justify-content: center;
-            gap: 1.6rem;
+            gap: 1.8rem;
             flex-wrap: wrap;
-            margin-top: 1.8rem;
+            margin-top: 2rem;
         }
         .contact-btn {
-            background: var(--slate-light);
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
+            background: var(--gray-cool);
+            padding: 0.9rem 2.2rem;
+            border-radius: 60px;
             text-decoration: none;
             font-weight: 600;
-            color: var(--primary-deep);
+            color: var(--navy-deep);
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            transition: all 0.25s;
+            gap: 12px;
+            transition: all 0.3s;
             border: 1px solid transparent;
+            font-size: 0.95rem;
         }
         .contact-btn i {
             font-size: 1.1rem;
-            color: var(--accent-coral);
+            color: var(--teal-accent);
+            transition: transform 0.2s;
         }
         .contact-btn:hover {
-            background: var(--accent-coral);
+            background: var(--teal-accent);
             color: white;
             transform: translateY(-3px);
-            border-color: var(--accent-soft);
-            box-shadow: 0 12px 22px -10px var(--accent-coral);
+            border-color: var(--teal-soft);
+            box-shadow: 0 15px 25px -12px var(--teal-accent);
         }
         .contact-btn:hover i {
             color: white;
+            transform: scale(1.1);
         }
 
         .footer {
-            background: var(--primary-deep);
-            color: #a6bbd0;
+            background: var(--navy-deep);
+            color: #94a3b8;
             text-align: center;
-            padding: 2rem;
+            padding: 2.2rem;
             font-size: 0.8rem;
-            border-top: 1px solid rgba(224,108,94,0.25);
+            border-top: 1px solid rgba(20,184,166,0.3);
         }
 
         @media (max-width: 768px) {
             .container { padding: 0 1.5rem; }
             .header-flex { flex-direction: column; gap: 1rem; text-align: center; }
-            .nav-links ul { gap: 1.2rem; justify-content: center; }
-            .section-title { font-size: 1.9rem; }
+            .nav-links ul { gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+            .section-title { font-size: 2rem; }
+            section { padding: 3.5rem 0; }
         }
         @media (max-width: 480px) {
             .project-card { flex: 1 1 100%; }
             .contact-links { flex-direction: column; align-items: center; }
+            .contact-btn { width: 80%; justify-content: center; }
+        }
+
+        /* Additional professional polish */
+        .about-text strong {
+            color: var(--navy-deep);
+            font-weight: 700;
+        }
+        .resume-highlight {
+            background: var(--teal-accent);
+            color: white;
+        }
+        .project-links a i {
+            font-size: 0.8rem;
+        }
+        .contact-card p:first-of-type {
+            font-weight: 500;
+            color: var(--slate-mid);
         }
     </style>
 </head>
 <body>
 
-<!-- Clean Background - No Bubbles -->
-<div class="bg-clean"></div>
-
 <header class="main-header">
     <div class="container header-flex">
         <div class="logo" data-aos="fade-right" data-aos-duration="700">
             <h1>Mounika Arraveni</h1>
-            <p>Full Stack Architect | Java • .NET • SpringBoot • Cloud</p>
+            <p>Full Stack Architect | Java • .NET • Cloud • Microservices</p>
         </div>
         <nav class="nav-links" data-aos="fade-left" data-aos-duration="700">
             <ul>
@@ -419,193 +459,138 @@
 
 <main>
     <div class="container">
-        <!-- About Section -->
+        <!-- About Section - Recruiter Optimized -->
         <section id="about">
-            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up">Profile Snapshot</h2>
             <div class="about-grid">
                 <div class="about-text" data-aos="fade-up" data-aos-delay="100">
-                    <p>👋 <strong>Mounika Arraveni</strong> — Full Stack Developer with 3+ years of experience in designing, deploying, and scaling enterprise-grade web applications. I specialize in <span class="highlight">Java (Spring Boot)</span>, <span class="highlight">.NET Core</span>, modern frontend frameworks (React), and robust <span class="highlight">database management (MySQL, SQL Server)</span>. I've led end-to-end production support, microservices, and real-time IoT ecosystems.</p>
+                    <p>👩‍💻 <strong>Mounika Arraveni</strong> — Full Stack Architect with 3+ years of enterprise experience architecting scalable, resilient web applications. Expert in <span class="highlight">Java (Spring Boot)</span>, <span class="highlight">.NET Core</span>, modern frontend stacks (React), and cloud-native architectures. Proven track record delivering end-to-end production support, microservices migrations, and real-time IoT ecosystems.</p>
                     <br>
-                    <p>⚙️ <strong>Backend & DevOps excellence:</strong> Expert in deploying apps on <strong>Apache Tomcat</strong>, <strong>Nginx</strong> reverse proxy, and <strong>AWS hosting (Lightsail)</strong>. I thrive on building secure, scalable full-stack solutions — from RESTful APIs to high-performance web portals.</p>
+                    <p>⚙️ <strong>Backend & Infrastructure Excellence:</strong> Deploy critical systems on <strong>Apache Tomcat</strong>, <strong>Nginx reverse proxy</strong>, and <strong>AWS (Lightsail, EC2)</strong>. Skilled in building secure RESTful APIs, high-performance data pipelines, and microservices with event-driven patterns (Kafka, MQTT).</p>
                     <br>
-                    <p>🌐 <strong>Full-stack proficiency:</strong> React , Spring Data JPA, Hibernate, ASP.NET MVC, Entity Framework. I've integrated USB/SPI communication protocols, MQTT brokers, WhatsApp Business API, and AI-driven chatbots. Passionate about bridging hardware-software boundaries and cloud-native patterns.</p>
+                    <p>🌐 <strong>Full-stack & Emerging Tech:</strong> React, Spring Data JPA, Hibernate, ASP.NET MVC, Entity Framework. Experience across USB/SPI hardware integration, MQTT brokers, WhatsApp Business API, and AI-powered chatbots. Passionate about bridging hardware-software boundaries and cloud-native patterns.</p>
                     <div class="tech-stack-list">
-                        <span class="tech-pill"><i class="fab fa-java"></i> Java/Spring</span>
-                        <span class="tech-pill"><i class="fab fa-microsoft"></i> .NET Core</span>
+                        <span class="tech-pill"><i class="fab fa-java"></i> Java/Spring Boot</span>
+                        <span class="tech-pill"><i class="fab fa-microsoft"></i> .NET Core/C#</span>
                         <span class="tech-pill"><i class="fas fa-cloud-upload-alt"></i> AWS (Lightsail)</span>
                         <span class="tech-pill"><i class="fas fa-server"></i> Tomcat/Nginx</span>
-                        <span class="tech-pill"><i class="fas fa-database"></i> MySQL / SQL</span>
+                        <span class="tech-pill"><i class="fas fa-database"></i> MySQL/SQL Server</span>
                         <span class="tech-pill"><i class="fab fa-react"></i> React/WebSockets</span>
+                        <span class="tech-pill"><i class="fas fa-broadcast-tower"></i> Kafka/MQTT</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills Section - Professional Density -->
         <section id="skills">
-            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <h2 class="section-title" data-aos="fade-up">Core Competencies</h2>
             <div class="skills-wrapper" data-aos="fade-up" data-aos-delay="80">
                 <span class="skill-chip"><i class="fab fa-java"></i> Java (11/17/EE)</span>
                 <span class="skill-chip"><i class="fab fa-microsoft"></i> .NET Core / C#</span>
                 <span class="skill-chip"><i class="fas fa-leaf"></i> Spring Boot / Spring MVC</span>
-                <span class="skill-chip"><i class="fas fa-code"></i> JSP / Servlets</span>
-                <span class="skill-chip"><i class="fab fa-react"></i> React</span>
+                <span class="skill-chip"><i class="fas fa-code-branch"></i> Microservices</span>
+                <span class="skill-chip"><i class="fab fa-react"></i> React.js</span>
                 <span class="skill-chip"><i class="fas fa-database"></i> MySQL / SQL Server</span>
                 <span class="skill-chip"><i class="fas fa-dharmachakra"></i> Tomcat / Nginx</span>
-                <span class="skill-chip"><i class="fab fa-aws"></i> AWS (Lightsail)</span>
+                <span class="skill-chip"><i class="fab fa-aws"></i> AWS (Lightsail, EC2)</span>
+                <span class="skill-chip"><i class="fas fa-exchange-alt"></i> Apache Kafka</span>
                 <span class="skill-chip"><i class="fas fa-microchip"></i> MQTT / IoT Protocols</span>
                 <span class="skill-chip"><i class="fab fa-whatsapp"></i> WhatsApp Business API</span>
-                <span class="skill-chip"><i class="fas fa-microphone-alt"></i> Chatbot</span>
-                <span class="skill-chip"><i class="fab fa-git-alt"></i> Git/Github</span>
-                <span class="skill-chip"><i class="fas fa-leaf"></i> Microservices</span>
+                <span class="skill-chip"><i class="fas fa-robot"></i> Chatbot Integration</span>
+                <span class="skill-chip"><i class="fab fa-git-alt"></i> Git/Github CI</span>
+                <span class="skill-chip"><i class="fas fa-plug"></i> USB/SPI Comms</span>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects Section - Enhanced with all your original and new professional projects -->
         <section id="projects">
-            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <h2 class="section-title" data-aos="fade-up">Enterprise Projects</h2>
             <div class="projects-grid">
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-content">
                         <div class="project-icon"><i class="fas fa-qrcode"></i></div>
                         <h3>V400 DMS · Web Application</h3>
-                        <div class="project-tech">
-                            <span class="tech-badge">Java/Servlets</span>
-                            <span class="tech-badge">Jsp</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Tomcat</span>
-                        </div>
-                        <p class="project-desc">Developed & provided production support for V400 DMS Web Application (L1 Scanners). Full lifecycle management — device scanning, real-time data sync, and warranty validation. Deployed on AWS EC2 with Nginx load balancing, handling 50,000+ concurrent scanner integrations.</p>
+                        <div class="project-tech"><span class="tech-badge">Java/Servlets</span><span class="tech-badge">JSP</span><span class="tech-badge">MySQL</span><span class="tech-badge">Tomcat</span></div>
+                        <p class="project-desc">Production support & full lifecycle for L1 Scanner integrations. Real-time data sync, warranty validation, deployed on AWS EC2 with Nginx load balancing, handling 50K+ concurrent scanner integrations.</p>
                     </div>
                 </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="130">
                     <div class="card-content">
                         <div class="project-icon"><i class="fas fa-chalkboard-user"></i></div>
-                        <h3>V600 DMS . Web Application</h3>
-                        <div class="project-tech">
-                            <span class="tech-badge">Java/JSP</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Servlets</span>
-                            <span class="tech-badge">AWS</span>
-                        </div>
-                        <p class="project-desc"><strong>Key modules:</strong> LFD level handling, Finger position validation, Firmware integrity checks, IQT-to-MFG workflow automation. Built robust admin dashboards, reduced manual validation errors by 40% and improved firmware deployment traceability.</p>
+                        <h3>V600 DMS · Workflow Automation</h3>
+                        <div class="project-tech"><span class="tech-badge">Java/JSP</span><span class="tech-badge">MySQL</span><span class="tech-badge">Servlets</span><span class="tech-badge">AWS</span></div>
+                        <p class="project-desc">LFD level handling, firmware traceability, IQT-to-MFG automation. Reduced manual validation errors by 40%, improved firmware deployment traceability with robust admin dashboards.</p>
                     </div>
                 </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="160">
                     <div class="card-content">
                         <div class="project-icon"><i class="fas fa-headset"></i></div>
-                        <h3>FieldSupport chatbot · USB/SPI + WhatsApp</h3>
-                        <div class="project-tech">
-                            <span class="tech-badge">Java</span>
-                            <span class="tech-badge">USB/SPI Comms</span>
-                            <span class="tech-badge">WhatsApp API</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge"> Chatbot</span>
-                        </div>
-                        <p class="project-desc">Developed FieldSupport Application enabling USB communication and SPI communication for field devices. Integrated WhatsApp Business messaging service + AI chatbot for real-time diagnostics. Reduced L1 support response by 65%.</p>
+                        <h3>FieldSupport · AI Chatbot + WhatsApp</h3>
+                        <div class="project-tech"><span class="tech-badge">Java</span><span class="tech-badge">USB/SPI</span><span class="tech-badge">WhatsApp API</span><span class="tech-badge">MySQL</span></div>
+                        <p class="project-desc">USB/SPI communication for field devices + WhatsApp Business API & AI chatbot for real-time diagnostics. Reduced L1 support response by 65%.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="190">
+                    <div class="card-content">
+                        <div class="project-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>GL11Connect · IoT Command Hub</h3>
+                        <div class="project-tech"><span class="tech-badge">React</span><span class="tech-badge">Spring Boot</span><span class="tech-badge">MySQL</span><span class="tech-badge">MQTT</span></div>
+                        <p class="project-desc">Remote device management platform over MQTT: getfile, putfile, shell commands on edge gateways, real-time audit trails & RBAC.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="220">
+                    <div class="card-content">
+                        <div class="project-icon"><i class="fas fa-stream"></i></div>
+                        <h3>Kafka Microservices · Event-Driven</h3>
+                        <div class="project-tech"><span class="tech-badge">Spring Boot</span><span class="tech-badge">Apache Kafka</span><span class="tech-badge">REST API</span></div>
+                        <p class="project-desc">Event-driven microservices: Order Service publishes events, Payment Service asynchronously consumes using @KafkaListener, JSON serialization, fault tolerance and loose coupling.</p>
+                        <div class="project-links"><a href="https://github.com/MounikaArraveni1/Kafka-Microservices" target="_blank" aria-label="GitHub Kafka"><i class="fab fa-github"></i> View Code →</a></div>
                     </div>
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="card-content">
-                        <div class="project-icon"><i class="fas fa-microchip"></i></div>
-                        <h3>GL11Connect · IoT Command Hub</h3>
-                        <div class="project-tech">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Spring Boot</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">MQTT</span>
-                        </div>
-                        <p class="project-desc">GL11Connect platform for remote device management: getfile, putfile, command execution over MQTT. Built intuitive dashboard to push firmware updates, fetch logs, and execute shell commands on edge gateways. Real-time audit trails and role-based access.</p>
+                        <div class="project-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <h3>MQTT Messaging · Pub-Sub</h3>
+                        <div class="project-tech"><span class="tech-badge">Spring Boot</span><span class="tech-badge">MQTT</span><span class="tech-badge">REST API</span></div>
+                        <p class="project-desc">Real-time publisher-subscriber messaging system with MQTT broker. REST APIs trigger publishing, async consumption via topics for scalable event-driven data flow.</p>
+                        <div class="project-links"><a href="https://github.com/MounikaArraveni1/MQTT_DEMO" target="_blank"><i class="fab fa-github"></i> View Code →</a></div>
                     </div>
                 </div>
-<div class="project-card" data-aos="fade-up" data-aos-delay="300">
-    <div class="card-content">
-        <div class="project-icon"><i class="fas fa-stream"></i></div>
-        <h3>Kafka Microservices · Event-Driven Architecture</h3>
-        <div class="project-tech">
-            <span class="tech-badge">Spring Boot</span>
-            <span class="tech-badge">Apache Kafka</span>
-            <span class="tech-badge">REST API</span>
-            <span class="tech-badge">JSON</span>
-        </div>
-        <p class="project-desc">
-            Built event-driven microservices using :contentReference[oaicite:0]{index=0} 
-            Order Service publishes events to Kafka topics, and Payment Service consumes them asynchronously using @KafkaListener. 
-            Implemented producer-consumer pattern with JSON serialization, ensuring loose coupling, fault tolerance, and scalability.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/MounikaArraveni1/Kafka-Microservices" target="_blank">🔗 View Code</a>
-        </div>
-    </div>
-</div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-    <div class="card-content">
-        <div class="project-icon"><i class="fas fa-broadcast-tower"></i></div>
-        <h3>MQTT Messaging System · Publisher-Subscriber Architecture</h3>
-        <div class="project-tech">
-            <span class="tech-badge">Spring Boot</span>
-            <span class="tech-badge">MQTT</span>
-            <span class="tech-badge">REST API</span>
-        </div>
-        <p class="project-desc">
-            Built a real-time messaging system using MQTT protocol with Spring Boot. 
-            Implemented publisher-subscriber architecture where REST APIs trigger message publishing, 
-            and subscribers consume messages asynchronously via topics. 
-            Integrated MQTT broker for decoupled communication, enabling scalable and event-driven data flow.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/MounikaArraveni1/MQTT_DEMO" target="_blank">🔗 View Code</a>
-        </div>
-    </div>
-</div>
-                
-               <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-    <div class="card-content">
-        <div class="project-icon"><i class="fas fa-cloud"></i></div>
-        <h3>Cloud & Deployment Experience</h3>
-        <div class="project-tech">
-            <span class="tech-badge">AWS</span>
-            <span class="tech-badge">Nginx</span>
-            <span class="tech-badge">Apache Tomcat</span>
-        </div>
-        <p class="project-desc">
-            Successfully deployed and managed multiple full-stack web applications on AWS using services like EC2 and Elastic Beanstalk. Configured Nginx as a reverse proxy and handled server deployments using Apache Tomcat. Ensured high availability, scalability, and efficient performance across production environments.
-        </p>
-    </div>
-</div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="280">
+                    <div class="card-content">
+                        <div class="project-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Cloud Deployment & DevOps</h3>
+                        <div class="project-tech"><span class="tech-badge">AWS</span><span class="tech-badge">Nginx</span><span class="tech-badge">Apache Tomcat</span></div>
+                        <p class="project-desc">Managed full-stack deployments on AWS EC2 & Elastic Beanstalk, configured Nginx as reverse proxy, Tomcat server optimizations for high availability and scalable production environments.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Section - Refined -->
         <section id="contact">
-            <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+            <h2 class="section-title" data-aos="fade-up">Connect & Collaborate</h2>
             <div class="contact-card" data-aos="fade-up" data-aos-delay="50">
-                <p style="margin-bottom: 1rem; font-size: 1.05rem;">📬 Open to full-stack development opportunities and collaborative projects.</p>
+                <p style="margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600;">📬 Let's build something impactful</p>
+                <p style="margin-bottom: 0.25rem; color: var(--text-muted);">Open to full-stack roles, cloud architecture, and innovative tech partnerships.</p>
                 <div class="contact-links">
-                    <a href="mailto:amounika2410@gmail.com" class="contact-btn" target="_blank">
-                        <i class="fas fa-envelope"></i> Gmail
-                    </a>
-                    <a href="https://www.linkedin.com/in/mounika-arraveni-84033a266" class="contact-btn" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/MounikaArraveni1" class="contact-btn" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                   <a href="MounikaArraveni_Resume.pdf" class="contact-btn" target="_blank">
-    <i class="fas fa-file-pdf"></i> Resume
-</a>
+                    <a href="mailto:amounika2410@gmail.com" class="contact-btn" target="_blank"><i class="fas fa-envelope"></i> Email Me</a>
+                    <a href="https://www.linkedin.com/in/mounika-arraveni-84033a266" class="contact-btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/MounikaArraveni1" class="contact-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="MounikaArraveni_Resume.pdf" class="contact-btn" target="_blank"><i class="fas fa-file-pdf"></i> Resume (PDF)</a>
                 </div>
-                <p style="margin-top: 1.8rem; font-size: 0.85rem; color: #5b6e8c;">
-    ✨ Open to opportunities, collaborations, and tech discussions — response within 24 hours.                </p>
+                <p style="margin-top: 2rem; font-size: 0.85rem; color: #5b6e8c; border-top: 1px solid var(--border-light); padding-top: 1.2rem;">
+                    ✨ Available for opportunities — response within 24 hours.
+                </p>
             </div>
         </section>
     </div>
 </main>
 
 <footer class="footer">
-    <p>© 2026 Mounika Arraveni — Full Stack Portfolio | Java • .NET • AWS </p>
-    <p style="margin-top: 8px; font-size: 0.7rem;">Tomcat • Nginx • Spring Boot • React • MQTT • USB/SPI Integrations</p>
+    <p>© 2026 Mounika Arraveni — Full Stack Architect | Java • .NET • Cloud • Microservices</p>
+    <p style="margin-top: 10px; font-size: 0.75rem;">Tomcat • Nginx • Spring Boot • React • MQTT • Kafka • USB/SPI Integrations</p>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -613,11 +598,11 @@
     AOS.init({
         duration: 700,
         once: true,
-        offset: 60,
+        offset: 40,
         easing: 'ease-out-quad'
     });
 
-    // Smooth scroll for anchor links
+    // Smooth scroll for navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -633,7 +618,7 @@
         });
     });
 
-    console.log("Professional Portfolio — Mounika Arraveni | Clean theme with smooth animations");
+    console.log("Professional Portfolio — Mounika Arraveni | Enhanced theme with teal accent & recruiter focus");
 </script>
 </body>
 </html>
